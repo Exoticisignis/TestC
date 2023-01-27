@@ -1,0 +1,18 @@
+function fixage(data){
+  let str = '';
+  var check = false;
+  for (var i = 0; i < data.length; i++) {
+    if (data[i] >= 18 && data[i] <= 60) {
+      str+= data[i];
+      if(i != data.length-1){
+        str+=',';
+      }
+      check = true;
+    }
+  }
+  if (check) {
+      return str;
+  } else {
+      return 'NA';
+  }
+}

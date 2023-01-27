@@ -1,0 +1,8 @@
+function optionalPow(a,b){
+  var check = confirm ("Wabba labba dab dab?");
+  if (check) {
+    return a**b;
+  } else {
+    return b**a;
+  }
+}
