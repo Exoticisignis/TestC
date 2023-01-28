@@ -124,7 +124,7 @@ namespace Test
 
 
         }
-        public bool isPowerOf2(int n)
+        private bool isPowerOf2(int n)
         {
             while (n > 0)
             {
@@ -136,7 +136,7 @@ namespace Test
             }
             return true;
         }
-        public List<int> getList2(int n)
+        private List<int> getList2(int n)
         {
             List<int> list = new List<int>();
             for(int i=1; i<n; i *= 2)
@@ -177,7 +177,7 @@ namespace Test
             }
 
         }
-        public int numberOfPrimes(int x, int y)
+        private int numberOfPrimes(int x, int y)
         {
             int result = 0;
             for (int i = x; i < y + 1; i++)
@@ -187,7 +187,7 @@ namespace Test
             }
             return result;
         }
-        public bool isPrime(int n)
+        private bool isPrime(int n)
         {
             if (n <= 1)
                 return false;
@@ -217,7 +217,7 @@ namespace Test
             }
             Console.WriteLine(findIndexOfMax(numbers));
         }
-        public int findIndexOfMax(int [] array)
+        private int findIndexOfMax(int [] array)
         {
             int max = 0;
             int index = 0;
